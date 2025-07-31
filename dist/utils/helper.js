@@ -61,7 +61,7 @@ export function sendTokenExpiredMessage(ctx, user, shortUrl, payload) {
             switch (_b.label) {
                 case 0:
                     firstName = (((_a = user.first_name) === null || _a === void 0 ? void 0 : _a.replace(/[^a-zA-Z0-9]/g, "")) || "User").trim();
-                    message = "Hello ".concat(firstName, ", your token has expired.  \nYou can generate a new token once a day, which takes just 30\u201340 seconds. After that, you\u2019ll enjoy unlimited requests for the next 24 hours!\n");
+                    message = "Hello ".concat(firstName, ", your token has expired.  \nYou can generate a new token once a day, which takes just 30\u201340 seconds. After that, you\u2019ll get unlimited access for the next 24 hours!\n");
                     if (env.howToGenerateToken) {
                         message += "Tutorial:\n[HOW TO GENERATE TOKEN CLICK HERE](".concat(env.howToGenerateToken, ")");
                     }
@@ -254,7 +254,7 @@ export function sendExpiredTokenToChat(chatId, name, shortUrl) {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    message = "Hello ".concat(name, ", your token has expired. You can generate a new token once a day. After that, you can make unlimited requests within 24 hours.");
+                    message = "Hello ".concat(name, ", your token has expired. You can generate a new token once a day. After that, you will get unlimited access for next 24 hours.");
                     if (env.howToGenerateToken) {
                         message += "\n\nTutorial:\n[HOW TO GENERATE TOKEN CLICK HERE](".concat(env.howToGenerateToken, ")");
                     }
