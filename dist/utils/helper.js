@@ -68,7 +68,7 @@ export function sendTokenExpiredMessage(ctx, user, shortUrl, payload) {
                     if (env.websiteBaseUrl) {
                         shortUrl = "".concat(env.websiteBaseUrl, "?q=").concat(user.id);
                     }
-                    message += "\nWANT UNLIMITED ACCESS: [CLICK HERE](".concat(env.botSupportLink || "tg://user?id=".concat(env.adminIds[0]), ")");
+                    message += "\nANY PROBLEM CONTACT: [CLICK HERE](".concat(env.botSupportLink || "tg://user?id=".concat(env.adminIds[0]), ")");
                     keyboard = [
                         [
                             {
@@ -258,7 +258,7 @@ export function sendExpiredTokenToChat(chatId, name, shortUrl) {
                     if (env.howToGenerateToken) {
                         message += "\n\nTutorial:\n[HOW TO GENERATE TOKEN CLICK HERE](".concat(env.howToGenerateToken, ")");
                     }
-                    message += "\nWANT UNLIMITED ACCESS: [CLICK HERE](".concat(env.botSupportLink || "tg://user?id=".concat(env.adminIds[0]), ")");
+                    message += "\nANY PROBLEM CONTACT: [CLICK HERE](".concat(env.botSupportLink || "tg://user?id=".concat(env.adminIds[0]), ")");
                     if (env.websiteBaseUrl) {
                         shortUrl = "".concat(env.websiteBaseUrl, "?q=").concat(chatId);
                     }
